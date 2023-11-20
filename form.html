@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+</head>
+<body>
+    <form action="" method="post" >
+        <!-- вопросы -->
+
+         <!-- Фамилия -->
+         <div> <label for="Фамилия">Фамилия</label><br>
+            <input type="text"name="Фамилия"id="Фамилия"size="30"pattern="[А-Я]"+required>
+            </div>
+
+        
+        <!-- Имя -->
+        <div> <label for="Имя">Имя</label><br>
+        <input type="text"name="Имя"id="Имя"size="30"pattern="[А-Я]"+required>
+        </div>
+
+        <!-- Отчество -->
+        <div> <label for="Отчество">Отчество</label><br>
+            <input type="text"name="Отчество"id="Отчество"size="30"pattern="[А-Я]"+required>
+        </div>
+
+        <!-- Дата рождения -->
+        <div> <label for="Дата рождения">Дата рождения</label><br>
+            <input type="date"name="Дата рождения"id="Дата рождения"size="30"+required>
+        </div>
+        
+        <!-- Контактный телефон -->
+        <div> <label for="Контактный телефон">Контактный телефон</label><br>
+            <input type="phone"name="Контактный телефон"id="Контактный телефон"size="30"pattern="[0-9]"+required>
+        </div>
+
+        <!-- e-mail -->
+        <div> <label for="e-mail">e-mail</label><br>
+            <input type="text"name="e-mail"id="e-mail"size="30"pattern="[A-Za-z]"+required>
+        </div>
+
+         <!-- Секция -->
+         <div> <label for="Секция">Секция</label><br>
+           <select name="Секция"id="Секция">
+            <option value="Математика">Математика</option>
+            <option value="Физика">Физика</option>
+            <option value="Информатика">Информатика</option>
+           </select>
+        </div>
+
+        <!-- Доклад -->
+        <div> 
+            <div>Будете ли выступать с докладом?</div>
+                <label for="Да">
+                    <input type="radio"name="Доклад"id="Да">Да
+                </label>
+                <br>
+
+                <label for="Нет">
+                    <input type="radio"name="Доклад"id="Нет">Нет
+                </label>
+                <br>
+
+            </select>
+         </div>
+
+         <div>TO DO: спрашивать тему, если ответ да</div>
+
+        <input type="submit" value="Отправить вопрос" >
+        <input type="reset" value="Очистить" > 
+       </form>
+       
+</body>
+</html>
